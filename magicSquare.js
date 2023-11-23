@@ -11,7 +11,7 @@ function verificarQuadradoMagico() {
     const somaD2 = valores[2] + valores[4] + valores[6];
 
     if (somaD1 !== 15 || somaD2 !== 15) {
-        alert("Não é um quadrado mágico!");
+        alert("Oops, não é um quadrado mágico!");
         return;
     }
 
@@ -20,9 +20,9 @@ function verificarQuadradoMagico() {
         const somaColuna = valores[i] + valores[i + 3] + valores[i + 6];
 
         if (somaLinha !== 15 || somaColuna !== 15) {
-            alert("Não é um quadrado mágico!");
+            alert("Oops, não é um quadrado mágico!");
             return;
         }
     }
-    alert("É um quadrado mágico!");
+    alert("Parabéns, é um quadrado mágico!");
 }
